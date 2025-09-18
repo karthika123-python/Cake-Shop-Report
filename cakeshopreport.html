@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Shop - Project Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: saddlebrown;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: saddlebrown;
+      margin-top: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background: #f2e0d2;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .container2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container1{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+        }
+        .box1{
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 4px 8px rgba(0,0,0,0.4);
+            width: 300px;
+            height: 300px;
+            text-align: center;
+        }
+        .box1 p {
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .box1 img{
+            border-radius: 12px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cake Shop - Project Report</h1>
+    <p>Duration: 12th - 19th September, 2025</p>
+    <p>Developed by:Vetri IT Systems Pvt Ltd</p>
+  </header>
+  
+  <div class="container">
+    <h2>Executive Summary</h2>
+    <p>The Cake Shop project is a responsive e-commerce website designed to sell cakes, pastries, brownies online. 
+    The platform ensures an easy browsing experience for customers, provides secure payment options, 
+    and orders.</p>
+
+    <h2>Project Team</h2>
+    <table>
+      <tr><th>Role</th><th>Name</th></tr>
+      <tr><td>Project Manager</td><td>Alagumari</td></tr>
+      <tr><td>Designer</td><td>Malathy</td></tr>
+      <tr><td>Developer</td><td>Karthika M</td></tr>
+      <tr><td>Tester</td><td>Yogavarshini</td></tr>
+    </table>
+
+    <h2>Technology Stack</h2>
+    <table>
+      <tr><th>Frontend</th><td>HTML, CSS, JavaScript</td></tr>
+      <tr><th>Server</th><td>Ngnix, Gunicorn, VPS</td></tr>
+    </table>
+
+    <h2>Project Scope</h2>
+    <ul>
+      <li><b>Product Catalog</b> - Cakes, pastries, snacks with images and prices</li>
+      <li><b>Shopping Cart</b> - Add to cart, checkout</li>
+      <li><b>Login & Sign Up</b> - facility to login and signup our website</li>
+      <li><b>Secure Payment</b> - UPI, credit/debit cards, net banking</li>
+    </ul>
+
+    <h2>Project Modules</h2>
+    <table>
+      <tr><th>Module</th><th>Description</th></tr>
+      <tr><td>Home Page</td><td>Showcase featured cakes and offers</td></tr>
+      <tr><td>Product Details</td><td>Detailed list of product</td></tr>
+      <tr><td>Products</td><td>List cakes, snacks, and categories</td></tr>
+      <tr><td>Special Cakes</td><td>Exclusive cakes for events</td></tr>
+      <tr><td>Cart & Checkout</td><td>Secure checkout system</td></tr>
+      <tr><td>Contact</td><td>Customer queries and feedback</td></tr>
+    </table>
+    <h2>project Code</h2>
+    <p>Below is a snippet from the base template used in the Cakeshop Project:
+    <div class="container2">
+        <code>
+    <body>
+    <div class="tagline">
+            <p>Welcome To Our Shop. Kindly Note, Currently We Delivery To All Location!. Thank You For Your Love And Support.</p>
+        </div>
+    <header class="header">
+        <div class="logo">
+            <img src="cherry_cake_transparent.png" alt="Cake Logo">
+        </div>
+        <nav class="navbar">
+            <a href="products.html">PRODUCTS</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="specialcakes.html">SPECIAL CAKES</a>
+            <a href="snacks.html">SNACKS</a>
+            <a href="contactus.html">CONTACT US</a>
+        </nav>
+       
+    </header>
+    <div class="hero">
+        <div>
+            <p class="orange">Include In Sweet Biss</p>
+            <p class="white">Celebrate The Season With Our <br>Exclusive Flavour</p>
+        </div>
+        <img src="logof1.png" alt="Logo 1" class="logo1">
+    </div>
+    <h3 class="border">Satisfy Your Cake Carving In A Flash!</h3>
+    <div class="divider"><span></span></div>
+    <div class="container1">
+        <div class="box1">
+        <a href="productdetails.html">
+            <img src="cake1.jpg" alt="Pastries">
+            <p>Pastries</p>
+        </a>
+        </div>
+        <div class="box1">
+        <a href="productdetails.html">
+            <img src="cake2.jpg" alt="Nuts Cake">
+            <p>Nuts Cake</p>
+        </a>
+        </div>
+        <div class="box1">
+        <a href="productdetails.html">
+            <img src="cake3.jpg" alt="Tea Cake">
+            <p>Tea Cake</p>
+        </a>
+        </div>
+        <div class="box1">
+        <a href="productdetails.html">
+            <img src="cake4.jpg" alt="Brownies">
+            <p>Brownies</p>
+        </a>
+        </div>
+        <div class="box1">
+        <a href="productdetails.html">
+            <img src="cake5.jpg" alt="Brownies">
+            <p>Brownies</p>
+        </a>
+        </div>
+        <div class="box1">
+        <a href="productdetails.html">
+            <img src="cake6.jpg" alt="Choco Cake">
+            <p>Choco Cake</p>
+        </a>
+        </div>
+        <div class="box1">
+        <a href="productdetails.html">
+            <img src="cake7.jpg" alt="Cheese Cake">
+            <p>Cheese Cake</p>
+        </a>
+        </div>
+        <div class="box1">
+        <a href="productdetails.html">
+            <img src="cake8.jpg" alt="White Forest">
+            <p>White Forest</p>
+        </a>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Experience Our Flavours</h3>
+    <p>Buy Cakes Online With A World Of Flavours At Your Fingertips</p>
+    </div>
+    <div class="container2">
+        <div class="box">Chocolate</div>
+        <div class="box">Black Forest</div>
+        <div class="box">Blueberry</div>
+        <div class="box">Butterscotch</div>
+        <div class="box">Red Velvet</div>
+        <div class="box">White Forest</div>
+    </div>
+    <div class="container3">
+         <div class="box2">
+         <a href="specialcakes.html">
+            <img src="cake9.jpg" alt="Butterscotch Cake">
+            <p>Butterscotch Cake</p>
+         </a>
+         </div>
+         <div class="box2">
+         <a href="specialcakes.html">
+            <img src="cake10.jpg" alt="Red Velvet">
+            <p>Red Velvet</p>
+         </a>
+         </div>
+         <div class="box2">
+         <a href="specialcakes.html">
+            <img src="cake11.jpg" alt="Chocolate Cake">
+            <p>Chocolate Cake</p>
+         </a>
+         </div>
+         <div class="box2">
+         <a href="specialcakes.html">
+            <img src="cake12.jpg" alt="Red Velvet">
+            <p>Red Velvet</p>
+         </a>
+         </div>
+    </div>
+    <div class="container4">
+        <h3>Why Choose Our Freshly Baked Cakes In Online?</h3>
+        <p>Our Cakes Have Been Serving Our Guests With The Best Quality Treats, Traditionally Made And<br>Presented With Care.</p>
+    </div>
+    <div class="container5">
+        <ul>
+            <li>
+                <h3>100% Freshly Baked</h3>
+                <p>We Believe In Delivering The Best. Our</p>
+                <p>Cakes Are Freshly Prepared Everyday</p>
+                <p>From Our Personalized Home Oven.</p>
+            </li>
+            <li>
+                <h3>Commited To Quality</h3>
+                <p>We Always Prioritize Quality From </p>
+                <p>Our Ingredients To Our Kitchen Operations</p>
+                <p>And Delivering Services.</p>
+            </li>
+            <li>
+                <h3>No Added Preservatives</h3>
+                <p>Our Cakes Are Freshly Prepared Based</p>
+                <p>On Requirements And Contain Zero</p>
+                <p>Preservatives Or Sweeteners.</p>
+            </li>
+        </ul>
+    </div>
+    <footer class="footer">
+        <ul>
+            <li>
+                <img src="cherry_cake_transparent.png" alt="Cake Logo" class="footerlogo">
+            </li>
+            <li>
+                <h3>ONLINE SHOPPING</h3>
+                <p>Home</p>
+                <p>Products</p>
+                <p>About Us</p>
+                <p>Special Cake</p>
+                <p>Snacks</p>
+                <p>Contact</p>
+            </li>
+            <li>
+                <h3>USEFUL LINKS</h3>
+                <p>T & C</p>
+                <p>Booking</p>
+                <p>Cancellation</p>
+                <p>Privacy Policy</p>
+                <p>Return / Refunds</p>
+                <p>Payments</p>
+            </li>
+            <li>
+                <h3>CONTACT US</h3>
+                <p><i class="fa fa-map-marker-alt"></i>  Manek Ratna<br>3rd Floor, Block No. 304,<br>Ryna Arcade, Zakeria Road, MAlad (West),<br>Maharashtra, Mumbai, Pincode: 400064</p>
+                <p><i class="fa fa-phone"></i> +91 8879438031</p>
+                <p><i class="fa fa-envelope"></i> info@cakeshop.com</p>
+            </li>
+        </ul>
+        <div class="copyrights">
+            &copy; 2021-2025 www.cakeshop.com All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
+</code>
+    </div>
+    </p>
+    <h2>Project Screenshorts</h2>
+    <p>Sample screenshorts from the Cake Shop web application</p>
+    <div class="container1">
+        <div class="box1">
+            <img src="homepage.jpeg" alt="Home Page">
+            <p>Home Page</p>
+        </a>
+        </div>
+        <div class="box1">
+            <img src="homepage.jpeg" alt="Home Page">
+            <p>Home Page</p>
+        </a>
+        </div>
+        <div class="box1">
+            <img src="homepage.jpeg" alt="Home Page">
+            <p>Home Page</p>
+        </a>
+        </div>
+        <div class="box1">
+            <img src="homepage.jpeg" alt="Home Page">
+            <p>Home Page</p>
+        </a>
+        </div>
+        <div class="box1">
+            <img src="homepage.jpeg" alt="Home Page">
+            <p>Home Page</p>
+        </a>
+        </div>
+        <div class="box1">
+            <img src="homepage.jpeg" alt="Home Page">
+            <p>Home Page</p>
+        </a>
+        </div>
+        <div class="box1">
+            <img src="homepage.jpeg" alt="Home Page">
+            <p>Home Page</p>
+        </a>
+        </div>
+        <div class="box1">
+            <img src="homepage.jpeg" alt="Home Page">
+            <p>Home Page</p>
+        </a>
+        </div>
+        <div class="box1">
+            <img src="homepage.jpeg" alt="Home Page">
+            <p>Home Page</p>
+        </a>
+        </div>
+        <div class="box1">
+            <img src="homepage.jpeg" alt="Home Page">
+            <p>Home Page</p>
+        </a>
+        </div>
+    </div>
+    <h2>Conclusion</h2>
+    <p>The Cake Shop project provides a complete digital platform for customers to order cakes online easily. 
+    With a user-friendly interface, secure payments, the system ensures 
+    both customer satisfaction and smooth business operations.</p>
+  </div>
+</body>
+</html>
